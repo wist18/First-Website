@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Wist Razvan</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <style>
+  .photo{
+    height: 200px;
+    width: 200px;
+    background-image: url("img/wist2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin: 80px auto 0 auto;
+    border-radius: 50%;
+  }
+
+  body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFAFA; /*Last version: background-color: #EEF2FF; background-color: #EEF2FF; background-color: #EEF2FF;*/
+  }
+
+  section h1{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+  }
+
+  header{
+    background-color: #2D303C;
+    color: #FFF;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 80px;
+  }
+
+  nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 0px 0 0px;
+    padding: 0 0px 0 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  height: 70px;
+  width: 120px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #AEAEAE;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  padding-top: 10px;
+}
+
+a{
+    color: #AEAEAE;
+    text-decoration: none;
+}
+
+li i{
+  color: #AEAEAE;
+}
+
+li#home, li#home i{
+  color: #FFDC4C;
+}
+
+li#home:hover{
+  background-color: #222429;
+}
+
+li#wist:hover, li#wist:hover i{
+  color: #FF5733;
+  background-color: #222429;
+}
+
+li#portofolio:hover, li#portofolio:hover i{
+  color: #21759b;
+  background-color: #222429;
+}
+
+li#tutorials:hover, li#tutorials:hover i{
+  color: #3DAC58;
+  background-color: #222429;
+}
+
+section{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #000;
+  /*background-color: #FFDC4C;*/
+  background-color: #FFDC4C;
+  height: 200px;
+  overflow: hidden;
+}
+
+section h1{
+  margin-top: 125px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+/*MAIN PART MAIN PART MAIN PART*/
+
+main div#contact{
+  text-align: center;
+  min-height: 300px;
+  margin: 20px 100px 20px 100px;
+  background-color: #E5E5E5;
+  padding: 10px 0 20px 0;
+}
+
+main p:nth-child(1){
+  padding: 50px 35px 0 35px;
+  font-size: 26px;
+}
+
+main p{
+  text-align: left;
+  padding: 50px 35px 0 35px;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+main h1{
+  text-align: center;
+  margin-top: 50px;
+}
+
+main a{
+  color:#5185F3;  /*LAST LAST LAST 21759B*/
+}
+
+.val{
+  /*background-color: #FFDC4C;*/
+  background-color: #FFDC4C;
+  width: 100%;
+}
+
+.prog{
+  /*background-color: #E5E5E5;*/
+  background-color: #2D303C;
+  color: #000;
+  width: 600px;
+  margin: 80px 100px 20px 100px;
+}
+
+.ot{
+  background-color: #FAFAFA;
+  width: 120px;
+}
+
+article#article ul{
+  list-style-type: none;
+  overflow: hidden;
+}
+
+article#article ul li{
+  margin-bottom: 30px;
+}
+
+article#article{
+  width: 100%;
+  color: #3B3B3B;
+}
+
+article#article div#image img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 80px;
+}
+
+article#article div#image{
+  text-align: center;
+  float: right;
+  width: 40%;
+  height: 580px;
+}
+
+article#article div#image a{
+  color:#21759b;
+}
+
+button{
+  margin-top: 30px;
+  background-color: #FFDC5C;
+  color: #000;
+  border: 2px #FFDC5C solid;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+button:hover{
+  background-color: #FFDC2C;
+  border: 2px #FFDC2C solid;
+}
+
+footer{
+  background-color: #2D303C;
+  font-weight: bold;
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE LINES --- RESPONSIVE LINES*/
+
+@media (max-width: 500px) {
+    nav li{
+       width: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+  main div{
+    margin: 0px 0px 0 0px;
+    padding: 0;
+  }
+
+  .prog{
+    margin: 0 0 30px 0;
+  }
+}
+
+@media (max-width: 1260px) {
+  article#article div#image{
+    float: none;
+    display: block;
+    width: 82%;
+    margin: 20px 100px 0px 100px;
+    margin: auto;
+  }
+
+  .prog{
+    margin: 0 0 30px 0;
+  }
+
+  .prog{
+    width: 90%;
+  }
+
+  .val{
+    width: auto;
+  }
+
+}
+
+@media (max-width: 350px){
+  section{
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  main div{
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+    font-size: 15px;
+  }
+
+
+
+  section h1{
+    font-size: 25px;
+  }
+
+  article#article ul li{
+    margin-bottom: 40px;
+  }
+
+  article#article ul{
+    margin-top: 70px;
+  }
+
+  .prog{
+    font-size: 14px;
+  }
+
+  .ot{
+    max-width: 80px;
+  }
+
+  .val{
+    min-width: 45%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  nav a{
+    display: inline-block;
+  }
+
+  nav li{
+    width: 80px;
+  }
+
+  main div{
+    line-height: 24px;
+  }
+
+  article#article ul li{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  article#article ul{
+    padding: 0;
+  }
+
+  div#image h1{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+  }
+
+  div#image{
+    padding-bottom: 100px;
+  }
+
+  .prog{
+    width: 100%;
+    text-align: center;
+  }
+
+  footer{
+    font-size: 16px;
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  nav li{
+    width: 80px;
+  }
+
+  article#article div#image{
+    margin:0;
+    width: 100%;
+  }
+
+
+  main div#contact{
+    margin: 0;
+    width: 100%;
+  }
+
+  main div#contact p{
+    font-size: 18px;
+  }
+
+  main div #contact p:nth-child(1){
+    font-size: 5px;
+  }
+
+}
+
+  </style>
+
+</head>
+
+<body>
+
+      <header>
+        <nav>
+
+            <ul align="center">
+
+              <a href="index.html"><li id="home"><p>Home</p></li></a>
+              <a href="wist.html"><li id="wist"><p>About</p></li></a>
+              <a href="portofolio.html"><li id="portofolio"><p>Portofolio</p></li></a>
+
+            </ul>
+        </nav>
+
+
+
+      </header>
+
+      <section>
+
+          <h1>Nice to meet you!</h1>
+
+      </section>  <br><br><br><br><br><br><br><br><br><br><br>
+
+      <main>
+
+        <div id="contact">
+          <p>I'm a Front-End Developer from Bucharest, Romania.<br><br>
+            I design and build coded websites from scratch.</p>
+            <p>Have a project you'd like to discuss? <br>
+              <a href="mailto:wist.web.design@gmail.com"> <button>Send me a message!</button></a></p>
+        </div>
+
+      </main>
+
+      <article id="article">
+
+        <div id="image">
+          <!--
+          *********************
+          *********************
+          *********************
+        <img src="img/profileBeach.jpg">
+        *********************
+        *********************
+        *********************
+
+      -->
+        <div class="photo"></div>
+        <h1>Who's this guy?</h1>
+        <p>I'm a Front-End Developer with a passion for design, blogging and tea. Not to forget aviation enthusiast :)</p><br>
+
+        <p>Want to work together? Contact me at <a href="mailto:wist.web.design@gmail.com" style="color: #5185F3;">razvan.wist@gmail.com.</a></p>
+      </div>
+
+        <ul>
+
+        <li><div class="prog">
+<div class="val" style="height:24px;width:95%">  <div class="ot" style="height:24px;"><h4>HTML</h4></div></div>
+</div></li>
+
+        <li><div class="prog">
+<div class="val" style="height:24px;width:87%">  <div class="ot" style="height:24px;"><h4>CSS</h4></div></div>
+</div></li>
+
+        <li><div class="prog">
+<div class="val" style="height:24px;width:60%">  <div class="ot" style="height:24px;"><h4>JavaScript</h4></div></div>
+</div></li>
+
+        <li><div class="prog">
+<div class="val" style="height:24px;width:75%">  <div class="ot" style="height:24px;"><h4>UI/UX Design</h4></div></div>
+</div></li>
+
+        <li><div class="prog">
+<div class="val" style="height:24px;width:45%">  <div class="ot" style="height:24px;"><h4>Java</h4></div></div>
+</div></li>
+
+        <li><div class="prog">
+<div class="val" style="height:24px;width:85%">  <div class="ot" style="height:24px;"><h4>C++</h4></div></div>
+</div></li>
+
+<li><div class="prog">
+<div class="val" style="height:24px;width:40%">  <div class="ot" style="height:24px;"><h4>Python</h4></div></div>
+</div></li>
+
+      </ul>
+
+</article>
+
+      <footer>
+        <p>Razvan Wist - Copyright &copy; 2017 - 2020. All rights reserved.</p>
+      </footer>
+
+</body>
+
+</html>

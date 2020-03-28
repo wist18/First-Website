@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Wist Razvan</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style>
+
+
+  body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFAFA;  /*Last version: background-color: #EEF2FF; background-color: #EEF2FF; background-color: #EEF2FF;*/
+  }
+
+  header{
+    background-color: #2D303C;
+    color: #FFF;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 80px;
+  }
+
+  ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 0px 0 0px;
+    padding: 0 0px 0 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+  li {
+  display: inline-block;
+  height: 70px;
+  width: 120px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #AEAEAE;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  padding-top: 10px;
+}
+
+td {
+display: inline-block;
+min-height: 70px;  /*FUN FACT FUN FACT FUN FACT: If you are set on removing the photos from the skillset section alltogether, remember to set the height of the td to 70 instead of min 70*/
+width: 120px;
+font-size: 16px;
+font-weight: bold;
+color: #AEAEAE;
+text-align: center;
+margin: 10px 0 10px 0;
+padding-top: 10px;
+margin: 20px;
+}
+
+
+a{
+    color: #AEAEAE;
+      text-decoration: none;
+}
+
+li i{
+  color: #AEAEAE;
+}
+
+.fab{
+  color: #FFF;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+li#home:hover, li#home:hover i{
+  color: #FFDC4C;
+  background-color: #222429;
+}
+
+li#wist, li#wist i{
+  color: #FF5733;
+}
+
+li#wist:hover{
+  background-color: #222429;
+}
+
+li#portofolio:hover, li#portofolio:hover i{
+  color: #21759b;
+  background-color: #222429;
+}
+
+li#tutorials:hover, li#tutorials:hover i{
+  color: #3DAC58;
+  background-color: #222429;
+}
+
+section#about{
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  background: linear-gradient(180deg, #212431, #34394D);
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #FFF;
+}
+
+section#about h1, section#about p{
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+}
+
+section#about h1{
+  margin-top: 10%;
+  font-size: 50px; /*font-seze: 50px BEFORE;*/
+}
+
+section#about p{
+  color: #CFCECE;
+  font-size: 24px;
+}
+
+section ul li{
+  height: 40px;
+}
+
+section#about a:hover li{
+  opacity: 0.8;
+}
+
+
+
+section#photo div{
+  background-image: url("img/wist2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 460px;
+  margin-top: 100vh; /*NEW NEW NEW NEW NEW NEW NEW NEW NEW NEW*/
+  margin-bottom: 60px;
+}
+
+main a{
+  color:#5185F3;  /*LAST LAST LAST 21759B*/
+}
+
+main{
+  font-family: 'Open Sans', sans-serif;
+  color: #3B3B3B;
+  margin: 0 220px 0 220px;
+  line-height: 34px;
+  z-index: 0;
+}
+
+main p{
+  margin-bottom: 30px;
+  font-size: 18px;
+
+}
+
+main p.introParagraph{
+  font-size: 32px;
+  line-height: 60px;
+}
+
+main h1{
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 60px;
+  color: #343434;
+}
+
+main table{
+  text-align: center;
+  margin-top: 50px;
+  text-align: left;
+}
+
+main table td{
+  text-align: center;
+  margin-top: 20px;
+  color: #3B3B3B;
+  display: inline-block;
+}
+
+div.jobBox{
+  transition: box-shadow .3s;
+  margin-top: 50px;
+  display: inline-block;
+  max-width: 700px; /*RESPONSIVE RESPONSIVE RESPONSIVE*/
+  min-height: 250px;
+  background-color: #FFF;
+  color: #000;
+  border: #A7A7A7 solid 1px;
+  border-radius: 10px;
+}
+
+div.jobBox:hover{
+box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+
+
+div.jobBoxDescription{
+  max-width: 700px; /*RESPONSIVE RESPONSIVE RESPONSIVE*/
+  min-height: 50px;
+  border-radius: 10px 10px 0 0;
+  background-color: #2D303C;
+  color: #FFF;
+}
+
+div.jobBoxDescription h1 span{
+  align: center;
+  color: #FAFAFA;
+  opacity: 0.0;
+  transition: opacity  0.5s;
+}
+
+div.jobBox:hover div.jobBoxDescription h1 span{
+  opacity: 1.0;
+}
+
+div.jobBoxText{
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 520px; /*RESPONSIVE RESPONSIVE RESPONSIVE*/
+  min-height: 120px;
+  background-color: #FFF;
+  color: #767676;
+}
+
+footer{
+  background-color: #2D303C;
+  font-weight: bold;
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  margin-top: 50px;
+}
+
+
+
+/* --RESPONSIVE LINES   RESPONSIVE LINES*/
+
+@media (max-width: 500px) {
+
+  nav a{
+    display: inline-block;
+  }
+
+  nav li{
+    width: 80px;
+  }
+
+  section#about h1{
+    padding-top: 100px;
+  }
+
+  section#about{
+    padding-bottom: 0;
+  }
+
+  section#about p{
+    font-size: 20px;
+  }
+
+  section#profile img{
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  section#about a{
+    display: inline-block;
+  }
+
+  main{
+    margin: 0 50px 0 50px;
+  }
+
+  main table{
+    width:100vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  main table td
+  {
+    display: block;
+  }
+
+  div.jobBox{
+    width: 100%;
+  }
+
+  footer{
+    font-size: 16px;
+    margin: 50px 0 0 0;
+  }
+
+}
+
+
+
+@media (max-width: 400px) {
+
+
+
+  li{
+     width: 80px;
+  }
+
+    section#about h1{
+      margin-top: 30px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    section#about p{
+      font-size: 19px;
+    }
+
+    main p{
+      font-size: 15px;
+    }
+
+    main {
+      margin: 0 0 0 0px;
+      text-align: left;
+    }
+
+    main h1{
+      font-size: 26px;
+    }
+
+    footer{
+      font-size: 16px;
+      padding: 20px 0 20px 0;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      left: 0;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    main{
+      margin: 0 100px 0 100px;
+    }
+}
+
+@media (max-width: 600px) {
+  nav li{
+    width: 80px;
+  }
+}
+
+@media (max-width: 700px) {
+    main{
+      margin: 0 10px 0 30px;
+    }
+
+    section#about p{
+      margin: 20px 20px 0 20px;
+    }
+
+    section#about ul{
+      margin-top: 50px;
+    }
+
+    section#about h1{
+      padding-top: 40px;
+    }
+
+    section#photo div{
+      background-attachment: scroll;
+      background-size: cover;
+    }
+
+}
+
+  </style>
+
+</head>
+
+<body>
+
+      <header>
+        <nav>
+
+            <ul align="center">
+
+                <a href="index.html"><li id="home"><p>Home</p></li></a>
+                <a href="wist.html"><li id="wist"><p>About</p></li></a>
+                <a href="portofolio.html"><li id="portofolio"><p>Portofolio</p></li></a>
+
+            </ul>
+        </nav>
+
+      </header>
+
+      <section id="about">
+          <br><br><br><br>
+          <h1>Razvan Wist</h1>
+          <p>Hi, I am Razvan! I am a <strong>Front-End Developer</strong> and blogger.</p>
+          <p> I enjoy designing websites from scratch and writing on my blog on a monthly basis.</p>
+          <p>Thank you for visiting this website!</p>
+
+          
+
+      </section>
+      <br>
+
+
+
+      <section id="photo">
+          <div></div>
+      </section>
+
+      <main>
+
+          <p class="introParagraph">Hi, I am Razvan Wist, a Front-End Developer, passionate blogger and aviation enthusiast.</p>
+
+          <h1>Why work with me </h1>
+          <p>I spent the last three years working both as a freelance web developer and designer and I had the chance to work with clients in Romania and Poland.</p>
+          <p>I am a perfectionist with great attention to detail, who enjoys to turn complex problems into simple, beautiful and intuitive designs.
+          <p>As a Front-end developer, I believe it is important not to overlook design in order to achieve a successful user-facing product. </p>
+          <p>Currently I am not accepting freelance work, but I'd love to get coffee and get to know you, so don’t hesitate to get in touch.</p>
+
+          <p> You can email me at <a href="mailto:wist.web.design@gmail.com">wist.web.design@gmail.com</a>.</p>
+
+          <h1>Programming Skills</h1>
+
+          <table>
+            <tr><td style="font-size:24px; background-color: #2D303C; color: #FAFAFA; border-radius: 10%; height: 48px;">Front-End</td></tr>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>JavaScript</td>
+            <tr><td style="font-size:24px; background-color: #2D303C; color: #FAFAFA; border-radius: 10%; height: 48px;">Back-End</td></tr>
+            <td>Java</td>
+            <td>C++</td>
+            <td>C Programming</td>
+            <td>Python</td>
+            <tr><td style="font-size:24px; background-color: #2D303C; color: #FAFAFA; border-radius: 10%; height: 48px;">API's</td></tr>
+            <td>Flask</td>
+          </table>
+
+          <h1>Experience</h1>
+
+          <div class="jobBox"><div class="jobBoxDescription"><h1 style="margin-top:0; padding: 20px 0 20px 20px;color: #FAFAFA";>Freelance Front-End Developer<br><span>2017 - Present</span></h1></div><div class="jobBoxText"><p>Created websites from scratch.</p> <p>Learned to know my worth, deal with clients, set expectactions early and often.</p> <p>Keep calm under stressful situations.</p> </div></div>
+          <div class="jobBox"><div class="jobBoxDescription"><h1 style="margin-top:0; padding: 20px 0 20px 20px;color: #FAFAFA";>AIAS Intern<br><span>2018 July - 2018 August (1 Month)</span></h1></div><div class="jobBoxText"><p>Research different industries and assist in brainstorming and idea planning.</p><p>Learned to take constructive criticism and the ability to speak with people in a professional setting.</p></div></div>
+          <div class="jobBox"><div class="jobBoxDescription"><h1 style="margin-top:0; padding: 20px 0 20px 20px;color: #FAFAFA";>ULL(A) Trainee Pilot<br><span>2019 - Present</span></h1></div><div class="jobBoxText"><p>Working towards obtaining my Ultra Light Aircraft Pilot Licence</p></div></div>
+
+          <h1>Other Accomplishments</h1>
+
+          <p>Successfully completed CS50's HardvardX: Introduction to Computer Science course in 2018 - <a href="https://courses.edx.org/certificates/730b2a3c4d154dc2813800464f55d2d4">Certificate</a></p>
+
+
+    </main>
+
+
+
+    <footer>
+      <p>Razvan Wist - Copyright &copy; 2017 - 2020. All rights reserved.</p>
+      <!--Made with love from Bucharest.
+          I made this website just to present myself in a few words. If you want to know more about me and the whole process i go through to design websites, grab a cup of coffee and contact me. I am more than happy to help you with your future projects.-->
+    </footer>
+</body>
+
+</html>
+
+<!--
+<p>One of my main hobbies include playing tennis with my friends on a weekly basis. I like to keep myself fit and have fun at the same time. It also helps me connect to the real world, as I spend a fair amount of time on the computer designing and coding on a daily basis, sometimes taking brakes to redesign my design concept on paper or trying to understand why the debugger is not cooperating with me.</p>
+<p>Other than that, I am a member of a robotics team established in Romania. I took part in manufacturing and testing the robots, being vastly fascinated of the whole "mechanical" aspect regarding robotics, but I also had the chance to talk and develop various programs in Java with the help of 3 other team members passionate about programming that would make the robot's movement more efficient throughout the competitions.
+<p>Moreover, I am keen on aviation. I am really fascinated by how an airplane maintains itself in air, the main factors that can deflect a plane's route and the maneuvers that pilots have in their "toolkits" to assure to safety of the passengers etc. I am now taking flight courses, being one step closer to becoming a pilot.</p>
+-->
